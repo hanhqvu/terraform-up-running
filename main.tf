@@ -9,7 +9,7 @@ resource "aws_instance" "example" {
 
   user_data = <<-EOF
                 #!/bin/bash
-                echo "Hello, Mom" > index.xhtml
+                echo "Hello, Mom" > index.html
                 nohup busybox httpd -f -p 8080 &
                 EOF
 
